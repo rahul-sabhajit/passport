@@ -7,6 +7,55 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## How to use
+
+sample download project and run following command.
+
+composer dump-autoload -o
+
+composer update --no-scripts
+
+php artisan migrate
+
+php artisan route:list
+
+php artisan make:seeder ArticlesTableSeeder
+
+php artisan db:seed --class=ArticlesTableSeeder
+
+## Configure Postman
+
+POST-  http://localhost/passport/public/oauth/token
+goto authentic create folde with any name like login
+add header-
+
+(1) Accept  application/json
+(2) Content-Type   application/json
+
+Body- select "raw" and write following line
+
+{
+"grant_type":"password",
+"client_id":"2",
+"client_secret":"m3p351DK9RfJuwCJGIBVxQNEktsc6BlNcGMk01kk",
+"username":"r@gmail.com",
+"password":"123456",
+"scope":"*"
+}
+
+GOTO manage enveronment
+
+Add your own authentication like that
+
+Add key- authorization
+value- 
+Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjkzNzdjNDE0MDRlMDQ3ODhmNmMzNTA4ODEzNWM1NjEyMzhmMGRjN2I3Njg1ZTc5OWM1N2U2M2EyNTQ5MGY3ZTQwMTI5YzNlODE5NTQ2YjljIn0.eyJhdWQiOiIyIiwianRpIjoiOTM3N2M0MTQwNGUwNDc4OGY2YzM1MDg4MTM1YzU2MTIzOGYwZGM3Yjc2ODVlNzk5YzU3ZTYzYTI1NDkwZjdlNDAxMjljM2U4MTk1NDZiOWMiLCJpYXQiOjE1MDg4Mjg5MDAsIm5iZiI6MTUwODgyODkwMCwiZXhwIjoxNTQwMzY0OTAwLCJzdWIiOiIxIiwic2NvcGVzIjpbIioiXX0.kTs4X7ZYNaTzoQJf75AtO94_xjtZoHTM4JIPii3kbZgHCX5u-fM_Fw9yzCX1NZqJxARivo3umB0gXF6CB3b7PTHE1SjNY44bn9YaxqF134nlNI_e5rFjJbl32lZ0B2p-8qfC1wCjnEJ0jD-fFr8TZo6jJEJ16qeAb0jNSZzjSfRfe5hyfVk6B90vjwUPqaVqS-iAZ2OJB5R5JewSvML-Y-SpHUnO6hmV_RtkGRt5pyTBMAQOhabrrn5UtgrJGXNO6uf9JjtV4LPx24gW_OM1xrMHviaHovqO9EubRXoj3JF3_69KPDuOtSCHtxWM-EUnyVQ7rENIFJUMvbUxopjzXYqL7ADua7142D3vZZRAzEFw-WH1pA89u1oXEBDAb3soFNJIZ7tN_66tEZ3W9j9pzdqFjsEchih_k_EKnB4CI_FfRbXDW4YJjqF2eYlCAEbpPknNtMbtbLEEzeitoA3LmKNnm_8Q_z1iavMxkoaRZzf12WbZP8vg7GjzSvG05PenGkm9TlP-1a210h--6e9eDF59yBQlPHPIl2lD4R_bFjJuprfIRJPucBLpHP3mLVuoLmfI-DmWSFZ3lPR1qEd_7p1rSnoSOhL_fytjUC6abvCwT7RmHa8i6RK-jUUSCbItIqfxw9fhFLdakFaQYSiHu-Pck7jVwgOF5AcLB1gPIec
+
+select yor authentication name
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
